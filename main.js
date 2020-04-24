@@ -47,7 +47,7 @@ pets = [{
     specialSkill: "Playing peek-a-boo from dark corners!",
     type: "cat",
   },
-  -- - {
+  {
     image: "https://bit.ly/2KwXwGZ",
     name: "Tyrannosaurus Rex",
     color: "Dark Green",
