@@ -140,7 +140,6 @@ const buildCards = (petArray) => {
 
   // initialize variables
   let cardsDomString = '';
-  const selectedDiv = document.querySelector('.card-container');
 
   // loop over pets and add their cards to cardsDomString
   for (let index = 0; index < petArray.length; index++) {
@@ -158,7 +157,13 @@ const buildCards = (petArray) => {
     cardsDomString += buildCard(header, imageURL, petColor, petSkill, petType);
   }
 
-  selectedDiv.innerHTML = cardsDomString;
+  printToDom('.card-container', cardsDomString)
+}
+
+const printToDom = (selector, domString) => {
+
+  const selectedDiv = document.querySelector(selector)
+  selectedDiv.innerHTML = domString;
 }
 
 const init = () => {
