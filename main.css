@@ -25,6 +25,11 @@ body h1 {
   color: white;
 }
 
+#allFilterButton {
+  background-color: darkgray;
+  border: 2px solid lightgray;
+}
+
 #dogFilterButton {
   background-color: rgb(78, 176, 87);
   border: 2px solid rgb(63, 165, 73);
