@@ -80,10 +80,25 @@ body h1 {
   align-items: center;
   margin-top: auto;
   height: 65px;
-  width: 480px;
-  border: 2px solid rgba(178, 230, 238, 0.5);
+  width: 476px;
   border-radius: 5px;
-  background-color: rgb(212, 235, 245);
   font-size: 1.25em;
+}
+
+.card-footer.Cat {
+  background-color: rgb(212, 235, 245);
   color: rgb(39, 107, 187);
+  border: 2px solid rgba(178, 230, 238, 0.5);
+}
+
+.card-footer.Dog {
+  background-color: rgb(218, 238, 212);
+  color: rgb(47, 131, 58);
+  border: 2px solid rgba(209, 230, 192, 0.5);
+}
+
+.card-footer.Dino {
+  background-color: rgb(252, 247, 224);
+  color: rgb(255, 180, 95);
+  border: 2px solid rgba(251, 235, 209);
 }

@@ -93,7 +93,7 @@ const buildCard = (header, imageURL, petColor, petSkill, petType, imageAltText =
         <p>${petSkill}</p>
       </div>
     </div>
-    <div class="card-footer">
+    <div class="card-footer ${petType}">
       <p>${petType}</p>
     </div>
   </div>`;
