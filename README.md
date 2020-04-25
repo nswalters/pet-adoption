@@ -1,3 +1,3 @@
 # Pet-Adoption
 
-[CodePen Example](https://codepen.io/nswalters/pen/YzyVKpb)
+[CodePen Preview of Finished Work](https://codepen.io/nswalters/pen/YzyVKpb)
