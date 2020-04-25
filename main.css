@@ -6,6 +6,43 @@
 
 body h1 {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.filterButtonContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 33%;
+  justify-content: space-evenly;
+  margin: 20px auto;
+}
+
+.filterButtonContainer button {
+  width: 140px;
+  height: 65px;
+  border-radius: 10px;
+  font-size: 1.25em;
+  color: white;
+}
+
+#allFilterButton {
+  background-color: darkgray;
+  border: 2px solid lightgray;
+}
+
+#dogFilterButton {
+  background-color: rgb(78, 176, 87);
+  border: 2px solid rgb(63, 165, 73);
+}
+
+#catFilterButton {
+  background-color: rgb(77, 186, 216);
+  border: 2px solid rgb(56, 177, 210);
+}
+
+#dinoFilterButton {
+  background-color: rgb(239, 161, 78);
+  border: 2px solid rgb(237, 148, 60);
 }
 
 .card-container {
