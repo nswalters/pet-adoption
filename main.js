@@ -114,23 +114,23 @@ allBtn.addEventListener('click', function () {
 const buildCard = (header, imageURL, petColor, petSkill, petType, imageAltText = 'Image') => {
 
   domString = `
-  <div class="card">
+<div class="card">
+  <div class="card-body">
     <div class="card-header">
       <h2>${header}</h2>
     </div>
-    <div class="card-body">
-      <div class="card-image">
-        <img src="${imageURL}" alt="${imageAltText}">
-      </div>
-      <div class="card-content">
-        <p>${petColor}</p>
-        <p>${petSkill}</p>
-      </div>
+    <div class="card-image">
+      <img src="${imageURL}" alt="${imageAltText}">
+    </div>
+    <div class="card-content">
+      <p>${petColor}</p>
+      <p>${petSkill}</p>
     </div>
     <div class="card-footer ${petType}">
       <p>${petType}</p>
     </div>
-  </div>`;
+  </div>
+</div>`;
 
   return domString;
 

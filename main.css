@@ -50,6 +50,7 @@ body h1 {
   flex-flow: row wrap;
   width: 75%;
   justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -67,17 +68,20 @@ body h1 {
   justify-content: center;
   align-items: center;
   height: 82px;
+  width: 476px;
   background-color: rgb(235, 235, 235);
   color: rgb(145, 145, 145);
-  border: 2px solid rgba(169, 169, 169, 0.5);
-  border-radius: 5px 5px 0 0;
+  border-bottom: 2px solid rgba(169, 169, 169, 0.5);
   font-size: 1.25em;
 }
 
 .card-body {
-  height: 620px;
+  display: flex;
+  flex-flow: column wrap;
+  height: 619px;
   border: 2px solid rgba(169, 169, 169, 0.5);
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
+  border-bottom: 0;
 }
 
 .card-image {
@@ -88,6 +92,7 @@ body h1 {
   height: 315px;
   width: 320px;
   margin: 30px auto auto;
+  margin-bottom: 0;
 }
 
 .card-image img {
@@ -97,29 +102,22 @@ body h1 {
 }
 
 .card-content {
+  display: flex;
+  flex-flow: column wrap;
   font-size: 1.75em;
-  margin-top: 20px;
-}
-
-.card-content p {
-  margin-top: 10px;
-}
-
-.card-content,
-.card-footer {
   text-align: center;
+  margin: auto 10px;
 }
-
 
 .card-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
   height: 65px;
   width: 476px;
   border-radius: 5px;
   font-size: 1.25em;
+  margin-left: -2px;
 }
 
 .card-footer.Cat {
