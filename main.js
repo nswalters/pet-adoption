@@ -77,6 +77,40 @@ pets = [{
   }
 ];
 
+// Add Event Listeners to Buttons
+const dogBtn = document.getElementById('dogFilterButton');
+const catBtn = document.getElementById('catFilterButton');
+const dinoBtn = document.getElementById('dinoFilterButton');
+const allBtn = document.getElementById('allFilterButton');
+
+const filterPets = (petType) => {
+  filteredPets = [];
+
+  pets.forEach(pet => {
+    if (pet.type === petType) {
+      filteredPets.push(pet);
+    }
+  });
+
+  buildCards(filteredPets);
+}
+
+dogBtn.addEventListener('click', function () {
+  filterPets('Dog');
+});
+
+catBtn.addEventListener('click', function () {
+  filterPets('Cat');
+});
+
+dinoBtn.addEventListener('click', function () {
+  filterPets('Dino');
+});
+
+allBtn.addEventListener('click', function () {
+  buildCards(pets);
+});
+
 const buildCard = (header, imageURL, petColor, petSkill, petType, imageAltText = 'Image') => {
 
   domString = `
@@ -102,16 +136,16 @@ const buildCard = (header, imageURL, petColor, petSkill, petType, imageAltText =
 
 };
 
-const buildCards = () => {
+const buildCards = (petArray) => {
 
   // initialize variables
   let cardsDomString = '';
   const selectedDiv = document.querySelector('.card-container');
 
   // loop over pets and add their cards to cardsDomString
-  for (let index = 0; index < pets.length; index++) {
+  for (let index = 0; index < petArray.length; index++) {
     // set the pet we are working on
-    pet = pets[index];
+    pet = petArray[index];
 
     // set the pet values we want to use for the card
     header = pet.name;
@@ -128,7 +162,7 @@ const buildCards = () => {
 }
 
 const init = () => {
-  buildCards();
+  buildCards(pets);
 }
 
 init();
